@@ -12,7 +12,7 @@ const subjects = {
   EVS:{icon:'🌱',tone:'green',desc:'Explore the world around you',modules:[
     ['Animals','🐾','Homes, food and sounds'],['Plants','🌿','Parts of plants and what they need'],['My Body','🧒','Body parts and five senses'],['Food','🍎','Healthy and unhealthy choices'],['Transport','🚗','Land, water and air'],['Weather','☀️','Seasons and weather']
   ]},
-  Telugu:{icon:'తెలుగు',tone:'purple',desc:'తెలుగు అక్షరాలు, పదాలు మరియు వాక్యాలు నేర్చుకోండి',modules:[
+  Telugu:{icon:'తె',tone:'purple',desc:'తెలుగు అక్షరాలు, పదాలు మరియు వాక్యాలు నేర్చుకోండి',modules:[
     ['అచ్చులు','అ','అచ్చులను గుర్తించండి'],['హల్లులు','క','హల్లులను గుర్తించండి'],['గుణింతాలు','కా','గుణింతాల అభ్యాసం'],['పదాలు','పదం','చిత్రాన్ని చూసి పదాన్ని ఎంచుకోండి'],['Missing Telugu Letters','_','తెలుగు అక్షరానికి సరైన ఎంపికను ఎంచుకోండి'],['వాక్యాలు','వాక్యం','పదాలను సరైన క్రమంలో అమర్చండి']
   ]},
   Hindi:{icon:'हिं',tone:'red',desc:'हिंदी अक्षर, शब्द और वाक्य सीखें',modules:[

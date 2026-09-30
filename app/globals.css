@@ -27,3 +27,80 @@ button{font-family:inherit;cursor:pointer}
 @media(max-width:900px){.heroKids{padding:32px 28px}.mascotStage{right:22px;transform:scale(.8);transform-origin:top right}.heroCopy{max-width:58%}.subjectGrid{grid-template-columns:repeat(2,1fr)}.subjectKids{min-height:145px}.dailyQuest:after{display:none}}
 @media(max-width:760px){body{background-image:radial-gradient(circle at 100% 8%,#eee9ff 0 100px,transparent 101px),radial-gradient(circle at 0 70%,#fff3cf 0 100px,transparent 101px)}.heroKids{min-height:390px;padding:25px 21px;display:flex;flex-direction:column}.heroCopy{max-width:none}.heroCopy h1{font-size:34px}.heroCopy p{font-size:15px}.heroActions{align-items:flex-start;flex-direction:column;gap:9px}.mascotStage{position:absolute;right:50%;transform:translateX(50%) scale(.62);top:220px}.bubbleOne{right:9%;top:10px}.bubbleTwo{right:7%;bottom:14px}.bubbleThree{left:5%;top:185px}.dailyQuest{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:18px}.questCopy{margin:0}.dailyQuest>button{grid-column:1/-1;width:100%;justify-content:center}.sectionHeading{align-items:center}.tinyBadge{display:none}.subjectGrid{grid-template-columns:1fr;gap:12px}.subjectKids{min-height:120px;padding:17px}.subjectIconWrap,.subjectIconWrap .bigIcon{width:62px;height:62px}.subjectIconWrap .bigIcon{font-size:36px;border-radius:19px}.subjectCopy h3{font-size:19px}.progressStrip{padding:15px}.starTotal{min-width:65px}.progressText small{display:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* BrightSteps mobile color + interaction upgrade */
+@media(max-width:760px){
+  body{
+    background:#f5f3ee;
+    background-image:radial-gradient(circle at 100% 0,#ded7ff 0 90px,transparent 91px),radial-gradient(circle at 0 42%,#ffe3a1 0 85px,transparent 86px),radial-gradient(circle at 100% 82%,#c9f1df 0 105px,transparent 106px);
+  }
+  main{padding-left:12px;padding-right:12px}
+  .top{padding:0 3px}
+  .heroKids{
+    background:linear-gradient(145deg,#fff8df 0%,#fff 48%,#eee9ff 100%);
+    border-color:#e7ddff;
+    box-shadow:0 14px 34px rgba(67,55,112,.13);
+  }
+  .heroCopy .eyebrow{color:#7459c8}
+  .heroCopy h1{color:#1e2f55}
+  .heroCopy p{color:#536784}
+  .heroStart{background:linear-gradient(135deg,#5d50e8,#7b68f5);box-shadow:0 9px 20px rgba(91,78,232,.30)}
+  .heroHint{color:#5e6376}
+  .dailyQuest{background:linear-gradient(135deg,#ffe8bc,#fff1d7);border-color:#ffc96e;box-shadow:0 10px 26px rgba(185,119,25,.12)}
+  .dailyQuest .pill{background:#fff7df;color:#a26410}
+  .dailyQuest h2{color:#24304a}
+  .dailyQuest p{color:#725f4b}
+  .dailyQuest>button{background:#27385e;box-shadow:0 8px 18px rgba(39,56,94,.22)}
+  .sectionHeading .eyebrow{color:#7557c9}
+  .sectionTitle{color:#1f3155}
+
+  /* Stronger subject colors on small screens */
+  .subjectKids.yellow{background:linear-gradient(135deg,#fff0b8,#fff8d9);border-color:#ffd56e}
+  .subjectKids.blue{background:linear-gradient(135deg,#d7edff,#eaf7ff);border-color:#8dccff}
+  .subjectKids.green{background:linear-gradient(135deg,#d5f3df,#e8faef);border-color:#91dfb2}
+  .subjectKids.purple{background:linear-gradient(135deg,#e6d8ff,#f3ecff);border-color:#c7adff}
+  .subjectKids.red{background:linear-gradient(135deg,#ffdce5,#fff0f3);border-color:#ffb6c7}
+  .subjectKids{box-shadow:0 8px 18px rgba(54,48,80,.09)}
+  .subjectKids:before{background:#ffffff72}
+  .subjectIconWrap .bigIcon{box-shadow:0 8px 18px rgba(53,48,80,.16);border:1px solid #ffffff}
+  .subjectCopy h3{color:#1d3155}
+  .subjectCopy p{color:#53647d}
+  .learnLink{color:#5c4bd4}
+  .cardArrow{background:#ffffffd9;color:#253555;box-shadow:0 3px 9px rgba(60,50,100,.10)}
+
+  .progressStrip{background:linear-gradient(135deg,#fff,#f5f0ff);border-color:#ded5ff;box-shadow:0 10px 24px rgba(55,48,88,.10)}
+  .progressIcon{background:#e4f4ff;border:1px solid #bde4ff}
+  .progressTrack{background:#ddd9ea;height:11px}
+  .progressFill{background:linear-gradient(90deg,#5d50e8,#7e70f4,#ff719f)}
+  .starTotal{border-left-color:#d8d0e9}
+
+  /* More vivid activity cards and answer controls */
+  .pageIntro{background:linear-gradient(135deg,#fff,#f0ebff);padding:14px;border-radius:24px;border:1px solid #ded5ff;box-shadow:0 8px 20px rgba(57,48,90,.07)}
+  .subjectBadge{background:#fff;border-color:#d8d0ee;box-shadow:0 6px 15px rgba(57,48,90,.10)}
+  .activityHead h1{color:#1e3158}
+  .activityHead p{color:#536783}
+  .generateBtn{background:#fff;border-color:#cfc5f5;color:#4f42c8;box-shadow:0 5px 13px rgba(75,62,160,.10)}
+  .questionCount{background:#eeeaff;border-color:#cfc4ff;color:#4e43b7}
+  .mathQ,.orderCard,.patternCard,.symbolQ,.wordCard,.sentenceCard,.evsCard{border-color:#ddd7e9;box-shadow:0 5px 15px rgba(54,47,79,.06)}
+  .mathQ input,.orderCard input{background:#fff;border-color:#c9c4d8}
+  .mathQ input:focus,.orderCard input:focus{border-color:#6b5ce7;box-shadow:0 0 0 4px rgba(107,92,231,.12)}
+  .wordOptions button,.choiceList button,.sentenceOptions button,.symbolOptions button,.tablePicker button{background:#fff;border-color:#d5cfe3;color:#293653;box-shadow:0 3px 8px rgba(49,43,73,.06)}
+  .wordOptions button.selected,.choiceList button.selected,.sentenceOptions button.selected,.symbolOptions button.selected,.tablePicker button.selected{background:#e4deff;border-color:#8e7cf4;color:#4e42bf;box-shadow:0 6px 14px rgba(104,89,225,.22)}
+  .submitBar{background:rgba(255,255,255,.97);border-color:#d9d2e8;box-shadow:0 10px 28px rgba(47,42,70,.14)}
+  .submit{background:linear-gradient(135deg,#29395f,#435782);box-shadow:0 8px 17px rgba(42,57,95,.22)}
+  .tablePicker{background:linear-gradient(135deg,#fff,#f0ecff);border-color:#d7cff2;box-shadow:0 7px 17px rgba(61,50,100,.08)}
+  .tablePicker span{color:#5b5f74}
+  .tablePicker button{background:#fff}
+  .tablePicker button.selected{background:#7567ef;color:#fff;border-color:#6254dc;box-shadow:0 6px 13px rgba(91,78,220,.25)}
+}
+
+@media(max-width:390px){
+  .heroKids{min-height:365px}
+  .heroCopy h1{font-size:31px}
+  .subjectKids{min-height:112px;padding:14px}
+  .subjectIconWrap,.subjectIconWrap .bigIcon{width:58px;height:58px}
+  .subjectIconWrap .bigIcon{font-size:33px}
+  .subjectCopy h3{font-size:18px}
+  .subjectCopy p{font-size:12px}
+  .learnLink{font-size:11px}
+}
