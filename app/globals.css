@@ -104,3 +104,38 @@ button{font-family:inherit;cursor:pointer}
   .subjectCopy p{font-size:12px}
   .learnLink{font-size:11px}
 }
+
+/* BrightSteps V3 - richer kids activities */
+.subjectKids.orange,.module.orange{background:linear-gradient(135deg,#fff0cf,#fff8e9);border-color:#ffc56b}
+.subjectKids.teal,.module.teal{background:linear-gradient(135deg,#d7f7f1,#e9fffb);border-color:#7bd8c9}
+@media(max-width:760px){
+  .subjectKids.orange{background:linear-gradient(135deg,#ffe3b0,#fff2d4);border-color:#ffbd58}
+  .subjectKids.teal{background:linear-gradient(135deg,#c9f3eb,#e4fcf8);border-color:#5ccfbe}
+  .top{padding-top:max(6px,env(safe-area-inset-top));}
+  .activityHead{padding-top:8px}
+}
+.orderCard{position:relative}
+.numberChips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 14px}
+.numberChips button{border:2px solid #ddd7e8;background:#fff;border-radius:16px;padding:11px 17px;font:inherit;font-weight:1000;color:#273656;cursor:grab;touch-action:none;box-shadow:0 4px 10px rgba(54,47,79,.06)}
+.numberChips button:active{cursor:grabbing}
+.numberChips button.chipActive{background:#e6e0ff;border-color:#8171ee;color:#4d42bd;transform:translateY(-2px);box-shadow:0 7px 16px rgba(104,89,225,.2)}
+.dropSlots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:10px}
+.dropSlot{min-height:58px;border-radius:16px;border:2px dashed #cfc8df;background:#faf9fd;color:#9b94a7;font:inherit;font-weight:900;padding:8px;cursor:pointer;transition:.15s}
+.dropSlot.filled{border-style:solid;border-color:#8979ed;background:#eeeaff;color:#4e43b7;box-shadow:0 5px 12px rgba(104,89,225,.13)}
+.dropSlot:focus{outline:none;box-shadow:0 0 0 4px rgba(107,92,231,.12)}
+.orderHint{display:block;margin-top:10px;color:#8b8496;font-size:11px;font-weight:800}
+.clearOrder{margin-top:10px;border:0;background:transparent;color:#756b87;font-weight:900;cursor:pointer;padding:5px}
+.computerOrder{max-width:900px;margin:0 auto 120px}
+.computerOrder h3{font-size:22px;margin:0 0 10px}
+.mapActivity{display:grid;gap:18px}
+.indiaMapCard{background:#fff;border:2px solid #ddd7e9;border-radius:24px;padding:14px;box-shadow:0 8px 20px rgba(54,47,79,.07);text-align:center;max-width:520px;margin:0 auto;width:100%}
+.indiaMapCard img{width:100%;max-height:430px;object-fit:contain;display:block;border-radius:16px;background:#f8f7fb}
+.indiaMapCard small{display:block;margin-top:8px;color:#81798d;font-weight:800}
+@media(max-width:760px){
+  .dropSlots{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dropSlot{min-height:54px;font-size:13px}
+  .numberChips button{padding:10px 14px;border-radius:14px}
+  .computerOrder{margin-bottom:125px}
+  .indiaMapCard{padding:10px;border-radius:20px}
+  .indiaMapCard img{max-height:350px}
+}
