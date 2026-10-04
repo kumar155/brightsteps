@@ -139,3 +139,13 @@ button{font-family:inherit;cursor:pointer}
   .indiaMapCard{padding:10px;border-radius:20px}
   .indiaMapCard img{max-height:350px}
 }
+
+
+/* Number-order answer inputs: children type the ordered values directly. */
+.orderNumber{display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:56px;padding:0 16px;border-radius:18px;background:#f6f6f4;border:2px solid #e7e5e1;font-weight:800;font-size:24px;color:#263653;}
+.orderAnswerInputs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px;}
+.orderAnswerField{display:flex;flex-direction:column;align-items:center;gap:6px;font-weight:800;color:#8a8798;font-size:13px;}
+.orderAnswerField input{width:100%;min-width:0;height:64px;border:3px solid #d7d0ea;border-radius:18px;background:#fff;color:#263653;text-align:center;font-size:24px;font-weight:800;outline:none;box-sizing:border-box;}
+.orderAnswerField input:focus{border-color:#8b7cf6;box-shadow:0 0 0 4px rgba(139,124,246,.14);}
+.orderAnswerField input::placeholder{color:#aaa6b5;font-size:15px;font-weight:700;}
+@media (max-width:600px){.orderAnswerInputs{gap:8px;}.orderNumber{min-width:52px;height:50px;padding:0 12px;font-size:21px;border-radius:16px;}.orderAnswerField input{height:58px;border-radius:16px;font-size:22px;}.orderAnswerField{font-size:12px;}}
