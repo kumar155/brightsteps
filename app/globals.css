@@ -149,3 +149,12 @@ button{font-family:inherit;cursor:pointer}
 .orderAnswerField input:focus{border-color:#8b7cf6;box-shadow:0 0 0 4px rgba(139,124,246,.14);}
 .orderAnswerField input::placeholder{color:#aaa6b5;font-size:15px;font-weight:700;}
 @media (max-width:600px){.orderAnswerInputs{gap:8px;}.orderNumber{min-width:52px;height:50px;padding:0 12px;font-size:21px;border-radius:16px;}.orderAnswerField input{height:58px;border-radius:16px;font-size:22px;}.orderAnswerField{font-size:12px;}}
+
+
+/* Direct numeric entry for number-order questions. */
+.orderAnswerInputs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px;}
+.orderAnswerInputs input{width:100%;min-width:0;height:64px;border:3px solid #d7d0ea;border-radius:18px;background:#fff;color:#263653;text-align:center;font-size:24px;font-weight:800;outline:none;box-sizing:border-box;}
+.orderAnswerInputs input:focus{border-color:#8b7cf6;box-shadow:0 0 0 4px rgba(139,124,246,.14);}
+.orderAnswerInputs input::placeholder{color:#aaa6b5;font-size:18px;font-weight:800;}
+.orderHint{display:block;margin-top:12px;color:#8a8798;font-weight:700;}
+@media (max-width:600px){.orderAnswerInputs{gap:8px;}.orderAnswerInputs input{height:58px;border-radius:16px;font-size:22px;}.orderHint{font-size:13px;}}
